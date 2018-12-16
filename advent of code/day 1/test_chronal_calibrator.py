@@ -16,13 +16,13 @@ class ChronalCalibratorTest(unittest.TestCase):
         assert_that(self.target.calibrate).raises(Exception).when_called_with("foo")
 
     def test__calibrate__with_positive_numbers__should_sum_the_numbers(self):
-        assert_that(self.target.calibrate("+5, +10")).is_equal(15)
+        assert_that(self.target.calibrate("+5, +10")).is_equal_to(15)
 
     def test__calibrate__with_negative_numbers__should_sum_the_numbers(self):
-        assert_that(self.target.calibrate("-5, -10")).is_equal(-15)
+        assert_that(self.target.calibrate("-5, -10")).is_equal_to(-15)
 
     def test__calibrate__with_mixed_numbers__should_sum_the_numbers(self):
-        assert_that(self.target.calibrate("-5, +10, -7")).is_equal(-2)
+        assert_that(self.target.calibrate("-5, +10, -7")).is_equal_to(-2)
 
 
 if __name__ == '__main__':

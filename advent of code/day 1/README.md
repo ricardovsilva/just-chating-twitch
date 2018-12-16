@@ -1,3 +1,3 @@
 # Day 1: Chronal Calibration
 
-[twitch video url]
+https://www.twitch.tv/videos/350070692
